@@ -1,0 +1,119 @@
+// // // // //
+
+.main {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+    padding-bottom: 22px;
+
+    @media only screen and (min-width: 900px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+        padding-bottom: 46px;
+    }
+}
+
+// // // // //
+
+.card {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    background-color: var(--color-3);
+    transition: background-color 0.15s ease-in-out;
+    text-align: center;
+    padding-bottom: 24px;
+
+    @media only screen and (min-width: 900px) {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.tab {
+    height: 4px;
+    border-radius: 5px 5px 0 0;
+}
+
+// // // // //
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+    margin-bottom: 28px;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.link,
+.link:link,
+.link:visited {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    color: var(--color-4);
+    transition: color 0.15s ease-in-out;
+}
+
+// // // // //
+
+.number {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: var(--color-5);
+    margin-bottom: 9px;
+    transition: color 0.15s ease-in-out;
+}
+
+.followers {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--color-4);
+    margin-bottom: 24px;
+    transition: color 0.15s ease-in-out;
+}
+
+// // // // //
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer div {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--lime-green-color);
+    transition: color 0.15s ease-in-out;
+}
+
+.footer .red {
+    color: var(--bright-red-color);
+}
+
+.arrow_icon {
+}
+
+.today_num {
+    margin: 0 4px;
+}
+
+.today {
+}
+
+// // // // //

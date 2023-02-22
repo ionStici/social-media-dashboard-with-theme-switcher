@@ -59,7 +59,9 @@ export const Header = (props) => {
         <nav className={styles.nav}>
             <div className={styles.content_wrapper}>
                 <h1 className={styles.h1}>Social Media Dashboard</h1>
-                <p className={styles.p}>Total Followers: 23,004</p>
+                <p className={styles.p}>
+                    Total Followers: {props.totalFollowers}
+                </p>
             </div>
 
             <div className={styles.toggle_wrapper}>
