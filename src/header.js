@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles/header.module.css';
 
 export const Header = (props) => {
     const rootEl = document.documentElement;
+    const [theme, setTheme] = useState('Dark');
 
     const toggleDarkTheme = (toggle) => {
+        setTheme('Dark');
+
         rootEl.style.setProperty('--color-1', 'hsl(230, 17%, 14%)');
         rootEl.style.setProperty('--color-2', 'hsl(232, 19%, 15%)');
         rootEl.style.setProperty('--color-3', 'hsl(228, 28%, 20%)');
         rootEl.style.setProperty('--color-4', 'hsl(228, 34%, 66%)');
         rootEl.style.setProperty('--color-5', 'hsl(0, 0%, 100%)');
+
+        rootEl.style.setProperty('--header-color', 'hsla(230, 20%, 15%, 1)');
+        rootEl.style.setProperty('--hover-color', 'hsla(228, 25%, 27%, 1)');
 
         rootEl.style.setProperty(
             '--header-border-color',
@@ -25,17 +31,23 @@ export const Header = (props) => {
     };
 
     const toggleWhiteTheme = (toggle) => {
+        setTheme('Light');
+
         rootEl.style.setProperty('--color-1', 'hsl(0, 0%, 100%)');
         rootEl.style.setProperty('--color-2', 'hsl(225, 100%, 98%)');
         rootEl.style.setProperty('--color-3', 'hsl(227, 47%, 96%)');
         rootEl.style.setProperty('--color-4', 'hsl(228, 12%, 44%)');
         rootEl.style.setProperty('--color-5', 'hsl(230, 17%, 14%)');
 
+        rootEl.style.setProperty('--header-color', 'hsla(227, 91%, 98%, 1)');
+        rootEl.style.setProperty('--hover-color', 'hsla(228, 33%, 91%, 1)');
+
         rootEl.style.setProperty(
             '--header-border-color',
             'hsla(230, 19%, 60%, 1)'
         );
         rootEl.style.setProperty('--toggle-bg-color', 'hsl(230, 22%, 74%)');
+
         toggle.style.left = '27px';
 
         toggle.setAttribute('data-theme', 'light');
@@ -65,7 +77,7 @@ export const Header = (props) => {
             </div>
 
             <div className={styles.toggle_wrapper}>
-                <p className={styles.p}>Dark Mode</p>
+                <p className={styles.p}>{theme} Mode</p>
                 <div className={styles.toggle} onClick={switchTheme}>
                     <div
                         data-theme="dark"

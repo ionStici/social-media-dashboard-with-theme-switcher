@@ -11,6 +11,8 @@
     /* prettier-ignore */
     --toggle-bg-color: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     --header-border-color: hsla(228, 25%, 27%, 1);
+    --header-color: hsla(230, 20%, 15%, 1);
+    --hover-color: hsla(228, 25%, 27%, 1);
 }
 
 * {

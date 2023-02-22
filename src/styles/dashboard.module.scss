@@ -30,6 +30,11 @@
         width: 100%;
         margin-bottom: 0;
     }
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+    }
 }
 
 .tab {
@@ -106,14 +111,8 @@
     color: var(--bright-red-color);
 }
 
-.arrow_icon {
-}
-
 .today_num {
     margin: 0 4px;
-}
-
-.today {
 }
 
 // // // // //

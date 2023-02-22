@@ -1,0 +1,112 @@
+.main {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+    margin-bottom: 45px;
+
+    @media only screen and (min-width: 900px) {
+        margin-bottom: 75px;
+    }
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-5);
+    transition: color 0.15s ease-in-out;
+
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+
+    @media only screen and (min-width: 900px) {
+        max-width: 1160px;
+        margin-bottom: 24px;
+    }
+}
+
+.wrapper {
+    @media only screen and (min-width: 900px) {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 255px));
+        grid-template-rows: repeat(2, 125px);
+
+        column-gap: 30px;
+        row-gap: 24px;
+    }
+}
+
+// // // // //
+
+.card {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--color-3);
+    transition: background-color 0.15s ease-in-out;
+    border-radius: 5px;
+    padding: 26px 31px 19px 24px;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+
+        @media only screen and (min-width: 900px) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        max-width: revert;
+        width: 100%;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+    }
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-4);
+    transition: color 0.15s ease-in-out;
+}
+
+// // // // //
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.num {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--color-5);
+    transition: color 0.15s ease-in-out;
+}
+
+.footerWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.perc {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 3px;
+}
+
+// // // // //

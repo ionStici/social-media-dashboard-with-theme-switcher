@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/base.css';
 import { Header } from './header';
 import { Dashboard } from './dashboard';
+import { Overview } from './overview';
 
 class App extends React.Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class App extends React.Component {
             <main>
                 <Header totalFollowers="23,004" />
                 <Dashboard />
+                <Overview />
             </main>
         );
     }
