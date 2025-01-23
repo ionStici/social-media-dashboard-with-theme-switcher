@@ -1,38 +1,34 @@
 # Social media dashboard with theme switcher solution
 
-This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H).
+This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-<!-- ### Primary
+## About the Project
 
--   Lime Green: hsl(163, 72%, 41%)
--   Bright Red: hsl(356, 69%, 56%)
+_This project was developed during my exploration of React_, focusing on state management for theme switching.
 
--   Facebook: hsl(208, 92%, 53%)
--   Twitter: hsl(203, 89%, 53%)
--   Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
--   YouTube: hsl(348, 97%, 39%)
+Crafted using **React** with `create-react-app`, **CSS**, and **Scss**, presents a static display of social media statistics with the added feature of switching between dark and light themes, offering users a personalized viewing experience.
 
-#### Dark Theme
+## Preview and Links
 
--   Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+<details>
+<summary><b>Open Preview</b></summary>
+<br>
 
-#### Light Theme
+![](./preview.png)
 
--   Toggle: hsl(230, 22%, 74%)
+<br>
+</details>
 
-#### Dark Theme
+| View it live: | [Live Demo URL](https://ionstici.github.io/social-media-dashboard-with-theme-switcher) | [Frontend Mentor](https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-ZUPOcJTrbO) |
+| ------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 
--   Very Dark Blue (BG): hsl(230, 17%, 14%)
--   Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
--   Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
--   Desaturated Blue (Text): hsl(228, 34%, 66%)
--   White (Text): hsl(0, 0%, 100%)
+## Features
 
-#### Light Theme
+-   **Static Stats Display:** Shows predefined social media statistics in a clean, organized manner.
+-   **Theme Switcher:** Allows users to toggle between dark and light themes, enhancing accessibility and user preference.
+-   **Responsive Design:** Designed to be responsive, ensuring the dashboard looks good on all devices using CSS and Scss.
 
--   White (BG): hsl(0, 0%, 100%)
--   Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
--   Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
--   Dark Grayish Blue (Text): hsl(228, 12%, 44%)
--   Very Dark Blue (Text): hsl(230, 17%, 14%)
--->
+## Tech Stack
+
+-   **React:** Initialized with `create-react-app`.
+-   **CSS/Scss:** For foundational styling of the dashboard.
